@@ -70,13 +70,13 @@ body {
     padding-bottom: 10px;
 }
 
-nav ul{
+.nav-bar nav ul{
     padding-top: 20px;
     text-align: right;
     margin-right: 100px;
 }
 
-nav ul li{
+.nav-bar nav ul li{
     display: inline-block;
     font-size: 18px;
     padding: 10px;
@@ -85,6 +85,127 @@ nav ul li{
 .nav-bar a{
     color: inherit;
     text-decoration: none;
+}
+
+.nav-bar a:hover{
+    color: #4c4c4c;
+}
+
+
+.drop-menu{
+	width:100%; 
+	background:#fff; 
+	height:60px; 
+	line-height:60px;
+}
+
+
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#000;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:13px 15px 0px 15px;
+  color:#000;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+.menu{
+    z-index:1000000; 
+    font-weight:bold; 
+    font-size:0.8em; 
+    width:100%; 
+    background:#4c4c4c;  
+    position:absolute; 
+    text-align:center;
+    height: 70px;
+}
+
+
+.menu ul {
+    margin: 0; 
+    padding: 0; 
+    list-style-type: none; 
+    list-style-image: none;
+}
+
+
+.menu li {
+    display: block;   
+    padding:15px 0 15px 0; 
+    border-bottom:#1d1f20 1px solid;
+}
+
+
+.menu li:hover{
+    border-bottom:#1d1f20 1px solid;
+}
+
+.menu ul li a { 
+    text-decoration:none;  
+    margin: 0px; 
+    color:#fff;
+}
+
+
+.menu ul li a:hover {
+    color: #fff; 
+    text-decoration:none;
+}
+
+
+.menu a{
+    text-decoration:none; 
+    color:white;
+}
+.menu a:hover{
+    text-decoration:none; 
+    color:white;
+}
+
+.glyphicon-home{
+  color:white; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
+}
+
+
+
+/*
+  ========================================
+  HEADER MEADIA QUERY
+  ========================================
+*/
+
+@media only screen and (max-width: 480px){
+    .nav-bar nav ul li{
+        text-align: center;
+        display: block;
+    }
 }
 
 
@@ -99,11 +220,11 @@ nav ul li{
 }
 
 .landing .one{
-    text-align: right;
+    text-align: center;
 }
 
 .landing img{
-    width: 80%
+    width: 40%;
 }
 
 .landing h2{
@@ -137,6 +258,406 @@ nav ul li{
     color: #009688;
 }
 
+
+/*
+  ========================================
+  LANDING SECTION MEADIA QUERY
+  ========================================
+*/
+
+@media only screen and (max-width: 1048px) {
+    .landing .section{
+        height: 700px;
+    }
+    
+    .landing .one{
+    width: 100%;
+    text-align: center;
+  }
+    
+    .landing .two{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .landing h2{
+        margin: 20px
+    }
+    
+    .landing img{
+        width: 20%;
+    }
+}
+
+
+/*
+  ========================================
+  FEATURES SECTION
+  ========================================
+*/
+
+.feature-section{
+    text-align: center;
+    margin: 50px 200px;
+}
+
+
+.feature-section p{
+    color: #737373;
+    font-size: 23px;
+    margin: 0 100px 30px 100px;
+    line-height: 25px;
+}
+
+.feature-section .btn{
+    color: #fff;
+    background: #009688;
+    border: 2px solid #009688;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.feature-section .btn:hover{
+    background: #fff;
+    color: #009688;
+}
+
+.feature-section a{
+    text-decoration: none;
+}
+
+.feature-section .section{
+    background: #e6ffff;
+    margin: 40px 0 0 0;
+    padding: 40px 0 40px 0;
+}
+
+
+.feature-section img{
+    width: 30%;
+    width: 30%;
+}
+
+.feature-section h3{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.feature-section h4{
+    font-size: 16px;
+    line-height: 23px;
+    padding: 0px 40px;
+}
+
+/*
+  ========================================
+  FEATURE SECTION MEADIA QUERY
+  ========================================
+*/
+
+@media only screen and (max-width: 1248px) {
+    .feature-section{
+    text-align: center;
+    margin: 50px 70px;
+  }
+}
+
+
+@media only screen and (max-width: 1048px){
+    .feature-section{
+    text-align: center;
+    margin: 50px 30px;
+  }
+}
+
+@media only screen and (max-width: 680px){
+    .feature-section{
+    text-align: center;
+    margin: 50px 10px;
+  }
+    
+    .feature-section p{
+    color: #737373;
+    font-size: 19px;
+    margin: 0 50px 30px 50px;
+    line-height: 25px;
+}
+    
+    .feature-section .one,
+    .feature-section .two,
+    .feature-section .three{
+        width: 100%;
+    }
+
+}
+
+/*
+  ========================================
+  GRID OF THREE
+  ========================================
+*/
+
+	
+.area_3_of_3 {
+	width: 100%; 
+}
+
+.area_2_of_3 {
+	width: 66.13%; 
+}
+
+.area_1_of_3 {
+	width: 32.26%; 
+}
+
+
+/*
+  ========================================
+  GO FULL WIDTH AT LESS THAN 480 PIXELS
+  ========================================
+*/
+
+@media only screen and (max-width: 480px) {
+	.area_3_of_3 {
+		width: 100%; 
+	}
+	.area_2_of_3 {
+		width: 100%; 
+	}
+	.area_1_of_3 {
+		width: 100%;
+	}
+}
+
+
+
+/*
+  ========================================
+  FULL FEATURE FIRST SECTION 
+  ========================================
+*/
+
+.full-feature{
+    text-align: center;
+    background: #f2f2f2;
+    padding: 50px 0 0 0;
+}
+
+.full-feature h2{
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.full-feature p{
+    font-size: 17px;
+    text-align: center;
+    padding: 0 400px 50px 400px;
+    line-height: 20px;
+}
+
+.full-feature .first,
+.full-feature .second,
+.full-feature .third,
+.full-feature .fourth{
+    padding-top: 50px;
+}
+
+
+.full-feature .one{
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.full-feature .four{
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.full-feature .five{
+    text-align: center;
+}
+
+.full-feature .eight{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.full-feature img{
+    width: 50%;
+    margin: 0;
+}
+
+.full-feature h3{
+    font-size: 19px;
+    padding: 60px 0 10px 0;
+}
+
+.full-feature h4{
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0 50px 10px 50px;
+}
+
+
+hr{
+    width: 70%;
+}
+
+/*
+  ========================================
+  FULL FEATURE SECOND SECTION
+  ========================================
+*/
+
+.second{
+    background: #fff;
+}
+
+
+/*
+  ========================================
+  FULL FEATURE THIRD SECTION
+  ========================================
+*/
+
+.third img{
+    width: 70%;
+}
+
+/*
+  ========================================
+  FULL FEATURE FOURTH SECTION
+  ========================================
+*/
+
+.fourth{
+    background: #fff;
+}
+
+
+/*
+  ========================================
+   FULL FEATURE SECTION MEADIA QUERY
+  ========================================
+*/
+
+@media only screen and (max-width: 1084px) {
+    .full-feature p{
+    font-size: 17px;
+    text-align: center;
+    padding: 0 300px 50px 300px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px){
+    .full-feature p{
+    font-size: 17px;
+    text-align: center;
+    padding: 0 200px 50px 200px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 843px){
+    .full-feature .one,
+    .full-feature .four,
+    .full-feature .five{
+        margin-top: 30px;
+    }
+    
+    .full-feature .eight{
+        margin-top: 165px
+    }
+}
+
+
+
+@media only screen and (max-width: 680px){
+    .full-feature .one,
+    .full-feature .two,
+    .full-feature .three,
+    .full-feature .four,
+    .full-feature .five,
+    .full-feature .six,
+    .full-feature .seven,
+    .full-feature .eight{
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .full-feature p{
+    font-size: 17px;
+    text-align: center;
+    padding: 0 50px 50px 50px;
+    line-height: 20px;
+  }
+}
+
+
+/*
+  ========================================
+  GOOGLE PLAY DOWNLOAD PAGE
+  ========================================
+*/
+
+.google-play{
+    text-align: center;
+    color: #fff;
+    padding: 50px 0 50px 0;
+    background: #009688;
+}
+
+.google-play h2{
+    font-size: 23px;
+    padding: 50px 0 0 0;
+    text-align: center;
+}
+
+.google-play h4{
+    font-size: 19px;
+    line-height: normal;
+    padding: 10px 50px;
+    text-align: center;
+}
+
+.google-play .gp1 img{
+    width: 30%;
+}
+
+.google-play .gp2 img{
+    width: 40%
+}
+
+
+/*
+  ========================================
+   GOOGLE PLAY SECTION MEADIA QUERY
+  ========================================
+*/
+
+@media only screen and (max-width: 900px){
+    .google-play .gp1 img{
+    width: 40%;
+}
+
+.google-play .gp2 img{
+    width: 70%
+    }
+}
+
+
+@media only screen and (max-width: 680px){
+    .google-play .gp1,
+    .google-play .gp2{
+        width: 100%;
+    }
+}
 
 
 
@@ -223,4 +744,155 @@ nav ul li{
 	.col { 
 		margin: 1% 0 1% 0%;
 	}
+}
+
+
+/*
+  ========================================
+  CONTACT PAGE
+  ========================================
+*/
+
+.contact-landing{
+    background-image: url(../images/contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+
+.contact-landing h1{
+    color: #fff;
+    font-size: 60px;
+    font-weight: bolder;
+    padding: 200px;
+    text-align: center;
+}
+
+.contact-info{
+    padding: 50px;
+    text-align: center;
+}
+
+.contact-info .section{
+    margin: 50px;
+}
+
+.contact-info h2{
+    font-size: 25px;
+    line-height: normal;
+}
+
+.contact-info h3{
+    color: #999;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contact-info h4{
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.contact-footer{
+    background: #e6ffff; 
+}
+
+/*
+  ========================================
+   CONTACT PAGE MEADIA QUERY
+  ========================================
+*/
+@media only screen and (max-width: 1048px){
+    .contact-info{
+    padding: 20px;
+    text-align: center;
+   }
+    
+    .contact-info .section{
+    margin: 20px;
+ }
+}
+
+@media only screen and (max-width: 900px){
+    .contact-info .section{
+    margin: 10px;
+ }
+    
+    .contact-info h2{
+    font-size: 22px;
+    line-height: normal;
+}
+
+.contact-info h3{
+    color: #999;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contact-info h4{
+    font-size: 17px;
+    line-height: 40px;
+}
+}
+
+@media only screen and (max-width: 680px){
+    .contact-info .col{
+        width: 100%;
+    }
+    
+    .contact-landing h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: bolder;
+    padding: 200px 0 0 0;
+    text-align: center;
+  }
+}
+
+/*
+  ========================================
+  FOOTER SECTION
+  ========================================
+*/
+
+footer{
+    text-align: center;
+    padding: 100px 100px 20px 100px
+}
+
+footer h2{
+    font-weight: 900;
+}
+
+footer nav ul li{
+    line-height: 30px;
+}
+
+footer .col{
+    margin-bottom: 60px;
+}
+
+footer a{
+    color: inherit;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #4c4c4c;
+}
+
+
+/*
+  ========================================
+   FOOTER SECTION MEADIA QUERY
+  ========================================
+*/
+
+@media only screen and (max-width: 680px){
+    footer{
+    text-align: center;
+    padding: 50px 50px 20px 50px;
+    }
+
 }
